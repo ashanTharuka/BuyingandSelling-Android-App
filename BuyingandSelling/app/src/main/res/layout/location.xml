@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/trademe"
+
+                />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                android:text="Manage Location"
+                android:textColor="@color/red"
+                android:textSize="20sp"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/typetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="28dp"
+                android:layout_toStartOf="@+id/logo"
+                android:text="Location ID" />
+
+            <EditText
+                android:id="@+id/locid"
+                android:focusable="false"
+                android:background="@color/lightblue"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/typetext"
+                android:layout_below="@+id/typetext"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lebel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/locid"
+                android:layout_below="@+id/locid"
+                android:layout_marginTop="20dp"
+                android:text="Location Name" />
+
+            <EditText
+                android:id="@+id/locname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/lebel2"
+                android:layout_below="@+id/lebel2"
+                android:ems="10"
+                android:inputType="textImeMultiLine|textPersonName" />
+
+
+            <Button
+                android:id="@+id/locaddbtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/locname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/add"
+                android:text="Add"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/locupdatebtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/deletebtn"
+                android:layout_below="@+id/deletebtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/update"
+                android:text="update"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/locviewallbtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/updatebtn"
+                android:layout_below="@+id/updatebtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/femailtext"
+                android:background="@drawable/viewall"
+                android:text="view all"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white" />
+            <ImageView
+                android:id="@+id/locback"
+                android:layout_width="50dp"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/back" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

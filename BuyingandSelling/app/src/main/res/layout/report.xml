@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/trademe" />
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="180dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/imageView2"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        app:srcCompat="@drawable/salesreport" />
+
+    <TextView
+        android:id="@+id/customerdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imageView3"
+        android:layout_marginTop="80dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="45dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:text="Customer Count : " />
+
+    <TextView
+        android:id="@+id/sellsdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/customerdata"
+        android:layout_marginTop="23dp"
+        android:text="Selling Count :"
+        android:layout_marginLeft="73dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/buydata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/sellsdata"
+        android:padding="8dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="65dp"
+        android:text="Buying Count :"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/customercounttext"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/customerdata"
+        android:layout_alignBottom="@+id/customerdata"
+        android:layout_marginStart="8dp"
+        android:layout_toEndOf="@+id/customerdata"
+        android:text="0"
+        android:textColor="@color/red"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/sellingcounttext"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/sellsdata"
+        android:layout_alignBottom="@+id/sellsdata"
+        android:layout_alignStart="@+id/customercounttext"
+        android:text="0"
+        android:textColor="@color/red"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/buyingcounttext"
+        android:layout_width="60dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buydata"
+        android:layout_alignBottom="@+id/buydata"
+        android:layout_alignStart="@+id/sellingcounttext"
+        android:text="0"
+        android:textColor="@color/red"
+        android:textSize="25sp" />
+
+    <ImageView
+        android:id="@+id/reportback"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="right"
+        android:layout_marginBottom="51dp"
+        android:layout_marginEnd="21dp"
+        app:srcCompat="@drawable/back" />
+
+
+</RelativeLayout>

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="8dp">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/logo"
+                android:layout_width="200dp"
+                android:layout_height="60dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="20dp"
+                app:srcCompat="@drawable/trademe"
+
+                />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/logo"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="casual"
+                android:text="Manage Item"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp"
+                android:textStyle="bold|normal" />
+
+            <TextView
+                android:id="@+id/typetext"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView7"
+                android:layout_marginTop="28dp"
+                android:layout_toStartOf="@+id/logo"
+                android:text="Item ID" />
+
+            <EditText
+                android:id="@+id/xxitemid"
+                android:focusable="false"
+                android:background="@color/lightblue"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/typetext"
+                android:layout_below="@+id/typetext"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/lebel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/xxitemid"
+                android:layout_below="@+id/xxitemid"
+                android:layout_marginTop="20dp"
+                android:text="Item Name" />
+
+            <EditText
+                android:id="@+id/xxiitemna"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/lebel2"
+                android:layout_below="@+id/lebel2"
+                android:ems="10"
+                android:inputType="textImeMultiLine|textPersonName" />
+
+            <TextView
+                android:id="@+id/label1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/xxiitemna"
+                android:layout_below="@+id/xxiitemna"
+                android:layout_marginTop="25dp"
+                android:text="Brand Name" />
+
+
+            <EditText
+                android:id="@+id/xxiibrandname"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:inputType="textPersonName" />
+
+            <Button
+                android:id="@+id/xxiaddbtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/xxiibrandname"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="26dp"
+                android:background="@drawable/add"
+                android:text="Add"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/xxideletebtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/xxiaddbtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/xxiaddbtn"
+                android:background="@drawable/delete"
+                android:text="Delete"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/xxiupdatebtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/xxideletebtn"
+                android:layout_below="@+id/xxideletebtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:background="@drawable/update"
+                android:text="update"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/xxiviewallbtn"
+                android:layout_width="200dp"
+                android:layout_height="40dp"
+                android:layout_alignStart="@+id/xxiupdatebtn"
+                android:layout_below="@+id/xxiupdatebtn"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@+id/femailtext"
+                android:background="@drawable/viewall"
+                android:text="view all"
+                android:layout_marginBottom="20dp"
+                android:textColor="@color/white" />
+            <ImageView
+                android:id="@+id/xxiitemback"
+                android:layout_width="50dp"
+                android:layout_gravity="right"
+                android:layout_height="wrap_content"
+                app:srcCompat="@drawable/back" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

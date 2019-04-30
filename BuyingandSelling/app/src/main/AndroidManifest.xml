@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.tharuka.ashan.buyingandselling">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/success"
+        android:label="Trade Me"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".SignUp"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".Email"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".AdminView"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".Buy"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".CustomerView"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".CustomerProfile"
+            android:label="Trade Me"></activity>
+
+        <activity
+            android:name=".Item"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".ManageUser"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".MyCart"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".Report"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".Sell"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".AdminProfile"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".ViewList"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".Manage"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".CustomerList"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".Location"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".ItemList"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".MainCategoryList"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".BrandList"
+            android:label="Trade Me"></activity>
+        <activity
+            android:name=".SellingItemsList"
+            android:label="Trade Me"></activity>
+
+        <activity
+            android:name=".BuyingItemsList"
+            android:label="Trade Me"></activity>
+
+        <activity
+            android:name=".ModelList"
+            android:label="Trade Me"></activity>
+
+
+    </application>
+
+</manifest>
